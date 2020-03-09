@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic-Tac-Toe</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/board.css" type="text/css">
+</head>
+
+
+<body>
+
+  <div class="outer-modal">
+    <div class="inner-modal">
+      <h1>Choose your player.</h1>
+      <button class="marker-button">x</button>
+      <button class="marker-button">o</button>
+    </div>
+  </div>
+
+  <h1>Tic-Tac-Toe</h1>
+
+  <div class="column board">
+    <div class="row">
+      <div class="square" value="0"></div>
+      <div class="square" value="1"></div>
+      <div class="square" value="2"></div>
+    </div>
+
+    <div class="row">
+      <div class="square" value="3"></div>
+      <div class="square" value="4"></div>
+      <div class="square" value="5"></div>
+    </div>
+
+    <div class="row">
+      <div class="square" value="6"></div>
+      <div class="square" value="7"></div>
+      <div class="square" value="8"></div>
+    </div>
+  </div>
+
+  <button id="reset-button">Reset</button>
+
+  <div class="game-over-outer outer-modal">
+    <div class="game-over-inner inner-modal"></div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/board.js"></script>
+</body>
+</html>
