@@ -36,7 +36,6 @@ function render() {
 /*----- cached element references -----*/
 
 const squares = Array.from(document.querySelectorAll('.square'))
-console.log(squares)
 
 /*----- event listeners -----*/
 
@@ -74,10 +73,8 @@ function makeMove(sessionMarker, idx, className, element) {
 
   let status = checkGameOver(sessionMarker);
   if (status === false) {
-    console.log("no game over")
     if (className === "player") makeComputerMove();
   } else {
-    console.log("game over")
     let elementInner = Array.from($('.game-over-inner'))[0]
     $('.game-over-outer').css('display', 'flex');
     $('.game-over-inner').css("display", "flex");
@@ -95,6 +92,7 @@ function makeComputerMove() {
   let idx = possibleMoves[i];
   let element = $(`div[value=${idx}]`).toArray()[0]
 
+  practice()
   makeMove(computerMarker, idx, "computer", element)
 }
 
